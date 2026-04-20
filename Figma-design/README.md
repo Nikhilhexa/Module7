@@ -13,6 +13,6 @@ visual references from the Figma source. Cropped image assets live in `assets/`.
 
 The Figma Make Todo design is included at:
 
-https://www.figma.com/make/CaIPDqlCAGopPYFQCWa629/Todo?t=3I8Kydck8rMOoXP6-0
+https://www.figma.com/make/CaIPDqlCAGopPYFQCWa629/Todo?p=f&t=XSm8Kq267J2JT2n1-0&perms-refresh=1
 
 Open `todo.html` to view the local page with the Figma Make embed.

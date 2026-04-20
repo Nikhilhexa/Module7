@@ -1,0 +1,32 @@
+# Single Agent Thread
+
+Thread name: `singleAgentThread`
+
+### Purpose
+
+This thread represents the full single-agent todo workflow used by the app.
+
+### Input
+
+- Raw todo items entered in the todo app.
+- A text list that may include urgency words, vague items, or delivery tasks.
+
+### Decision Path
+
+1. Clean the raw list into individual todo items.
+2. Identify urgency, priority, and category signals for each item.
+3. Build the first board by placing tasks into `Today`, `This Week`, or `Later`.
+4. Review the draft board for vague tasks, overloaded work, or missing owner details.
+5. Add clarification notes when a task needs more detail.
+6. Return the final prioritized board and expose the full thread history in one thread.
+
+### Output
+
+- A cleaned and prioritized todo board.
+- The `Today`, `This Week`, and `Later` lanes.
+- Review notes for vague or risky tasks.
+- A single visible thread named `singleAgentThread`.
+
+### Next Handoff
+
+- None. The same agent owns the todo workflow from start to finish and publishes the final response from `singleAgentThread`.
